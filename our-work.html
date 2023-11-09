@@ -25,7 +25,11 @@
 </head>
 
 
-<body >
+<body>
+     <!--Loading Screen Div-->
+     <div class="loading-screen">
+        <img src="assets/images/the+walls+white-18.png" alt="Loading...">
+      </div>
     <!--Scroll Up Button-->
     <button onclick="topFunction()" id="myBtn" title="Go to top"> <!--Scroll Up Button-->
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="black" class="bi bi-arrow-up-circle"
@@ -890,6 +894,17 @@
         crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--Loading Screen-->
+    <script>
+        window.addEventListener("load", function() {
+      // Page is fully loaded, hide the loading screen
+      const loadingScreen = document.querySelector(".loading-screen");
+      const mainContent = document.querySelector(".content");
+  
+      loadingScreen.style.display = "none";
+      mainContent.style.display = "block";
+      });
+      </script>
     <!-- custom JS code after importing jquery and owl -->
     <script>
         $(document).ready(function () {

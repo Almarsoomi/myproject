@@ -32,6 +32,10 @@
 </head>
 
 <body>
+    <!--Loading Screen Div-->
+     <div class="loading-screen">
+        <img src="assets/images/the+walls+white-18.png" alt="Loading...">
+      </div>
      <!--Nav Here -->
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black" aria-label="Offcanvas navbar large ">
@@ -790,6 +794,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Boot Strap 4 for 1st Carsaoul -->
+    <!--Loading Screen-->
+    <script>
+        window.addEventListener("load", function() {
+      // Page is fully loaded, hide the loading screen
+      const loadingScreen = document.querySelector(".loading-screen");
+      const mainContent = document.querySelector(".content");
+  
+      loadingScreen.style.display = "none";
+      mainContent.style.display = "block";
+      });
+      </script>
     <!-- JavaScript for disabling form submissions if there are invalid fields-->
     <script>
         (() => {
