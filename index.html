@@ -68,6 +68,10 @@
   </head>
 
   <body>
+    <!--Loading Screen Div-->
+    <div class="loading-screen">
+      <img src="assets/images/the+walls+white-18.png" alt="Loading...">
+    </div>
     <!--Mini NavBar -->
     <nav id="mini-nav" class="navbar bg-black">
       <div class="container">
@@ -841,6 +845,17 @@
     <script src="assets/js/script-owl.js"></script>
     <!--carousel Swiper-->
     <!--Boot Strap 4 for 1st Carsaoul -->
+    <!--Loading Screen-->
+    <script>
+      window.addEventListener("load", function() {
+    // Page is fully loaded, hide the loading screen
+    const loadingScreen = document.querySelector(".loading-screen");
+    const mainContent = document.querySelector(".content");
+
+    loadingScreen.style.display = "none";
+    mainContent.style.display = "block";
+    });
+    </script>
     <!-- JavaScript for disabling form submissions if there are invalid fields-->
     <script>
       (() => {
